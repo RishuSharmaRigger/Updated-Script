@@ -14,3 +14,6 @@ def connectAttribute():
 	print "animCurve Connected...",
 		
 connectAttribute()
+
+
+print 'test'

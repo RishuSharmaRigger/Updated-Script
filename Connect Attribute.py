@@ -7,13 +7,10 @@ import pymel.core as pm
 def connectAttribute():
 	grp = pm.ls(sl=True)
 	pm.delete(grp,sc=True)
-	CtrlName = "nurbsCircle1.Test"
-	animCurve = pm.findKeyframe(grp[0],c=True)
+	CtrlName = "Fingers_R.Fist"
+	animCurve = pm.findKeyframe(grp,c=True)
 	for i in range(len(animCurve)):
 		connect = pm.connectAttr(CtrlName,animCurve[i]+".input")
 	print "animCurve Connected...",
 		
 connectAttribute()
-
-
-print 'test'
